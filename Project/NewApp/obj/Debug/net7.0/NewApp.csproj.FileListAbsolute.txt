@@ -1,0 +1,15 @@
+C:\ASP MVC\Project\NewApp\bin\Debug\net7.0\NewApp.exe
+C:\ASP MVC\Project\NewApp\bin\Debug\net7.0\NewApp.deps.json
+C:\ASP MVC\Project\NewApp\bin\Debug\net7.0\NewApp.runtimeconfig.json
+C:\ASP MVC\Project\NewApp\bin\Debug\net7.0\NewApp.dll
+C:\ASP MVC\Project\NewApp\bin\Debug\net7.0\NewApp.pdb
+C:\ASP MVC\Project\NewApp\obj\Debug\net7.0\NewApp.csproj.AssemblyReference.cache
+C:\ASP MVC\Project\NewApp\obj\Debug\net7.0\NewApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\ASP MVC\Project\NewApp\obj\Debug\net7.0\NewApp.AssemblyInfoInputs.cache
+C:\ASP MVC\Project\NewApp\obj\Debug\net7.0\NewApp.AssemblyInfo.cs
+C:\ASP MVC\Project\NewApp\obj\Debug\net7.0\NewApp.csproj.CoreCompileInputs.cache
+C:\ASP MVC\Project\NewApp\obj\Debug\net7.0\NewApp.dll
+C:\ASP MVC\Project\NewApp\obj\Debug\net7.0\refint\NewApp.dll
+C:\ASP MVC\Project\NewApp\obj\Debug\net7.0\NewApp.pdb
+C:\ASP MVC\Project\NewApp\obj\Debug\net7.0\NewApp.genruntimeconfig.cache
+C:\ASP MVC\Project\NewApp\obj\Debug\net7.0\ref\NewApp.dll
