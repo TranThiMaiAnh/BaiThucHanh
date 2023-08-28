@@ -15,14 +15,21 @@
 
         table, th, td {
                     border:1px solid black;
-                    border-collapse: collapse;
+                    /* border-collapse: collapse; */
                     }
-                
+        /* th,td {
+            text-align: center;
+           
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 40px;
+        } */
 
-        /* th, td {
-          background-color: #96D4D4;
-        }  */
-        
+        table {
+            border-spacing: 30px;
+            }
+
         </style>
 </head>
 <body>
@@ -30,24 +37,23 @@
     <h2>Bảng trong HTML - By Mai Anh</h2>
 
     <table style="width:100%">
-      <tr>
-        <th style="width:70%">Name</th>
-        <td>MAI anh</td>
-        <td>Thảo Linh</td>
-      </tr>
-      <tr  style="height:100px">
-        <th style="width:20%">Age</th>
-        <td>20</td>
-        <td>22</td>
-      </tr>
-      <tr>
-        <th>Address</th>
-        <td>HaNoi</td>
-        <td>Ho Chi Minh</td>
-        
-      </tr>
-    </table>
-    
+        <caption>Bảng sơ yếu lý lịch</caption>
+        <tr>
+          <th colspan="2">Họ Đệm và Tên</th>
+          <!-- <th>Tên</th> -->
+          <th>Tuổi</th>
+        </tr>
+        <tr>
+          <td>Trần Thị Mai</td>
+          <td>Anh</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Nguyễn Thảo</td>
+          <td>Linh</td>
+          <td>22</td>
+        </tr>
+      </table>
 
 </body>
 </html>
