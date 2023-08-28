@@ -6,55 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mai Anh </title>
     <style>
-        /* .city {
-          background-color: green;
-          color: white;
-          border: 4px solid black;
-          margin: 20px;
-          padding: 20px;
-        } */
-        .note {
-            font-size: 120%;
-            color: red;
-        }
-        </style>
+    #myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+    } 
+    .city {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+    } 
+</style>
     
 </head>
 <body>
-    <!-- <div class="city">
-        <h2>London</h2>
-        <p>London is the capital of England.</p>
-        </div> 
-        
-        <div class="city">
-        <h2>Paris</h2>
-        <p>Paris is the capital of France.</p>
-        </div>
-        
-        <div class="city">
-        <h2>Tokyo</h2>
-        <p>Tokyo is the capital of Japan.</p>
-        </div> -->
-        <!-- <h1>My <span class="note">Important</span> Heading</h1>
-        <p>This is some <span class="note">important</span> text.</p> -->
-        <button onclick="myFunction()">Hide elements</button>
+    <h2>Thuộc tính - Attribute</h2>
+    <p>Mai Anh</p>
 
-<h2 class="city">London</h2>
-<p>London is the capital of England.</p>
+    <h1 id="myHeader">My-Family</h1>
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+    <p><a href="#C4">Đi tới chương 4</a></p>
+    <p><a href="#C10">đi tới chương 10</a></p>
 
-<h2 class="city">Paris</h2>
-<p>Paris is the capital of France.</p>
+    <h2>CHƯƠNG 1</h2>
+    <p>This Chương explains </p>
 
-<h2 class="city">Tokyo</h2>
-<p>Tokyo is the capital of Japan.</p>
+    <h2>CHƯƠNG 2</h2>
+    <p>This Chương </p>
+    <h2 id="C4">Chương 4</h2>
+    <p>This Chương explains </p>
+    <h2>Chương 8</h2>
+    <p>This Chương explains </p>
 
-<script>
-function myFunction() {
-  var x = document.getElementsByClassName("city");
-  for (var i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-}
+    <h2>Chương 9</h2>
+    <p>This Chương explains </p>
+
+    <h2 id="C10">Chương 10</h2>
+    <p>This Chương explains </p>
+
+    <h3 id="myLife">Hello!</h3>
+    <button onclick="displayResult()">Change text</button>
+    <script>
+    function displayResult() {
+    document.getElementById("myLife").innerHTML = "Have a nice day!";
+    }
 </script>
+
+
 </body>
 </html>
