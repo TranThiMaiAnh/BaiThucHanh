@@ -9,17 +9,19 @@
 </head>
 <body>
 
-    <h2>HTML Iframes</h2>
-    <p>You can use the height and width attributes to specify the size of the iframe:</p>
+    <h2>Use JavaScript to Change Text</h2>
+    <p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+    <button type="button" onclick="myFunction()">Click Me!</button>
+    <p id="demo">This is a demonstration.</p>
     
-    <!-- <iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
-    <iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe>
-    <iframe src="demo_iframe.htm" style="border:2px solid red;" title="Iframe Example"></iframe> -->
-    <iframe src="demo_iframe.htm" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
-    <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
-
-
+    <script>
+    function myFunction() {
+    // document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    document.getElementById("demo").style.fontSize = "25px"; 
+    document.getElementById("demo").style.color = "red";
+    document.getElementById("demo").style.backgroundColor = "yellow";
     
-
+    }
+    </script>   
 </body>
 </html>
