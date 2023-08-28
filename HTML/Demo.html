@@ -5,40 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        
+        img {
+          width: 100%;
+        }
+        h3 {
+            background-image: url('workplace.jpg');
+            }
+    
+         body {
+                background-image: url('css.jpeg');
+         }
+        </style>
+        
    
     
 </head>
 <body>
-    <h1>HTML Links</h1>
-    <p><a href="https://getbootstrap.com/">Visit Bootstrap.com!</a></p>
-    <h2>The target Attribute</h2>
-    <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a> 
+    <h2>HTML Image</h2>
+    <img src="pic_trulli.jpg" alt="Trulli" width="500" height="333">
+    <img src="pic_trulli.jpghhh" alt="Trulli" width="500" height="333">
+    <h2>Width/Height Attributes or Style?</h2>
+
+    <p>(set to 128 pixels).</p>
+    <img src="css.jpeg" alt="css icon" width="128" height="128">
+    <p>The second image uses the style attribute to set the width to 128 pixels, this will not be overridden by the style in the head section:</p>
+    <img src="css.jpeg" alt="css icon" style="width:128px;height:128px;">
+
+    <h2>Mai Anh </h2>
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" style="width:104px;height:142px;">
+
+    <h2>hoạt hình </h2>
+    <img src="cartoon.gif" alt="Computer man" style="width:48px;height:48px;">
+
+    <h2> ảnh dưới dạng liên  kết</h2>
+    <a href="default.asp">
+    <img src="pic_trulli.jpg" alt="HTML tutorial" style="width:42px;height:42px;">
+    </a>
+
+    <h2>ảnh nổi</h2>
+    <p>
+    <img src="pic_trulli.jpg" alt="Smiley face" style="float:right;width:42px;height:42px;">
+    Nổi sang phải.
+    </p>
+    <p>
+    <img src="pic_trulli.jpg" alt="Smiley face" style="float:left;width:42px;height:42px;">
+    Nổi sang phải.
+    </p>
+
+    <h2>Bản đồ </h2>
+    <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap" style="width:200px;height:200px;">
+    <map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="MAI ANH" href="https://www.thegioididong.com/laptop">
+    <area shape="rect" coords="290,172,333,250" alt="2021050093" href="https://www.apple.com/vn/ipad/">
+    <area shape="circle" coords="337,300,44" alt="HA NOI" href="https://congcaphe.com/">
+    </map>
+    <h3>ảnh nền</h3>
+
+
+
     
-    <h2>URLS tuyệt đối</h2>
-    <p><a href="https://www.google.com/">Google</a></p>
-
-    <h2>URL tương đối</h2>
-    <p><a href="html_images.asp">HTML Images</a></p>
-
-    <h2>Liên kết ảnh</h2>
-    <p>Click vào ảnh</p>
-    <a href="default.asp"><img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-
-    <h2>Link to an Email Address</h2>
-    <p><a href="maianh@gamil.com">Send Email to Mai Anh</a></p>
-
-    <h2>Nút liên kết</h2>
-    <p>Click the button to go to the HTML tutorial.</p>
-    <button onclick="document.location='default.asp'">HTML Tutorial - Mai Anh</button>
-
-    <h2>Link Titles</h2>
-    <a href="https://getbootstrap.com/" title="Go to Bootstrap">Visit our Bootstrap Tutorial</a>
-
-    
-
-
-
-
 
 </body>
 </html>
