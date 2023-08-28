@@ -20,9 +20,9 @@
         /* tr:nth-child(even){
           background-color: #65dede;
         } */
-        th:nth-child(odd),td:nth-child(odd) {
+        /* th:nth-child(odd),td:nth-child(odd) {
             background-color: #53c2c2;
-            }
+            } */
         </style>    
            
         
@@ -30,31 +30,50 @@
 <body>
     
     <h2>Bảng trong HTML - By Mai Anh</h2>
-    <table>
+    <table style="width: 100%">
+        <!-- <colgroup>
+            <col span="2" style="background-color: #D6EEEE">
+            </colgroup>
+          <col span="2" style="background-color: pink">
+            </colgroup> -->
+            <!-- <colgroup>
+                <col span="2">
+                <col span="2" style="background-color: pink">
+              </colgroup> -->
+              <colgroup>
+                <col span="2">
+                <col span="2" style="visibility: collapse">
+              </colgroup>
+            
         <tr>
         <th>tên</th>
         <th>sdt</th>
         <th>dia chi</th>
+        <th>giới tính</th>
         </tr>
         <tr>
         <td>Mai Anh</td>
         <td>03696789</td>
         <td>ha noi</td>
+        <td>nữ</td>
         </tr>
         <tr>
         <td>Ha Anh</td>
         <td>099876567</td>
         <td>Sai Gon</td>
+        <td>nam</td>
         </tr>
         <tr>
         <td>Ha Vy</td>
         <td>08767858</td>
         <td>Da Nang</td>
+        <td>nữ</td>
         </tr>
         <tr>
         <td>Ngoc Lan</td>
         <td>6780984</td>
         <td>Hue</td>
+        <td>nữ</td>
         </tr>
       </table>
     
