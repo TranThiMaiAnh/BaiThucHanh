@@ -6,47 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mai Anh </title>
     <style>
-           
         table, th, td {
-                    border:1px solid black; 
-                    border-collapse: collapse; 
+          border-collapse: collapse;
+          /* width: 100%; */
+          border: 1px solid black; 
         }
-                    
-        /* th,td {
-            text-align: center;
-           
-            padding-top: 10px;
-            padding-bottom: 20px;
-            padding-left: 30px;
-            padding-right: 40px;
+        
+        /* th, td {
+          text-align: left;
+          padding: 8px;
         } */
-
-        /* table {
-            border-spacing: 30px;
-            } */
-
-        </style>
+        
+        /* tr:nth-child(even){
+          background-color: #65dede;
+        } */
+        th:nth-child(odd),td:nth-child(odd) {
+            background-color: #53c2c2;
+            }
+        </style>    
+           
+        
 </head>
 <body>
     
     <h2>Bảng trong HTML - By Mai Anh</h2>
-
-    <table style="width:100%">
-        <caption>Bảng sơ yếu lý lịch</caption>
+    <table>
         <tr>
-            <th>Tên</th>
-            <td>MAI ANH</td>
-          </tr>
-          <tr>
-            <th rowspan="3">MSV</th>
-            <td>202105</td>
-          </tr>
-          <tr>
-            <td>00939</td>
-          </tr>
-          <tr>
-            <td>202106</td>
-          </tr>
+        <th>tên</th>
+        <th>sdt</th>
+        <th>dia chi</th>
+        </tr>
+        <tr>
+        <td>Mai Anh</td>
+        <td>03696789</td>
+        <td>ha noi</td>
+        </tr>
+        <tr>
+        <td>Ha Anh</td>
+        <td>099876567</td>
+        <td>Sai Gon</td>
+        </tr>
+        <tr>
+        <td>Ha Vy</td>
+        <td>08767858</td>
+        <td>Da Nang</td>
+        </tr>
+        <tr>
+        <td>Ngoc Lan</td>
+        <td>6780984</td>
+        <td>Hue</td>
+        </tr>
+      </table>
+    
+        
 
 </body>
 </html>
