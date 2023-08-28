@@ -5,55 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mai Anh </title>
-    <style>
-    #myHeader {
-    background-color: lightblue;
-    color: black;
-    padding: 40px;
-    text-align: center;
-    } 
-    .city {
-    background-color: tomato;
-    color: white;
-    padding: 10px;
-    } 
-</style>
     
 </head>
 <body>
-    <h2>Thuộc tính - Attribute</h2>
-    <p>Mai Anh</p>
 
-    <h1 id="myHeader">My-Family</h1>
-    <h2 class="city">London</h2>
-    <p>London is the capital of England.</p>
-    <p><a href="#C4">Đi tới chương 4</a></p>
-    <p><a href="#C10">đi tới chương 10</a></p>
+    <h2>HTML Iframes</h2>
+    <p>You can use the height and width attributes to specify the size of the iframe:</p>
+    
+    <!-- <iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+    <iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe>
+    <iframe src="demo_iframe.htm" style="border:2px solid red;" title="Iframe Example"></iframe> -->
+    <iframe src="demo_iframe.htm" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+    <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
 
-    <h2>CHƯƠNG 1</h2>
-    <p>This Chương explains </p>
 
-    <h2>CHƯƠNG 2</h2>
-    <p>This Chương </p>
-    <h2 id="C4">Chương 4</h2>
-    <p>This Chương explains </p>
-    <h2>Chương 8</h2>
-    <p>This Chương explains </p>
-
-    <h2>Chương 9</h2>
-    <p>This Chương explains </p>
-
-    <h2 id="C10">Chương 10</h2>
-    <p>This Chương explains </p>
-
-    <h3 id="myLife">Hello!</h3>
-    <button onclick="displayResult()">Change text</button>
-    <script>
-    function displayResult() {
-    document.getElementById("myLife").innerHTML = "Have a nice day!";
-    }
-</script>
-
+    
 
 </body>
 </html>
