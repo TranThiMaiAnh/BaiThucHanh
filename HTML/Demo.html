@@ -5,17 +5,51 @@
   <title>Title of document</title>
 </head>
 <body>
-    <b><i>Some text</i></b>
-    <p>This is a paragraph</p>
-    <p>This is another paragraph</p>
+  <h2>HTML Forms</h2>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Mai"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Anh"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
 
-    A break: <br />
-    A horizontal rule: <hr />
-    An image: <img src="happy.gif" alt="Happy face" />
-    <p>This is a paragraph</p>
-    <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
-    <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
-    <input type="checkbox" name="vehicle" value="car" checked="checked" />
-    <input type="text" name="lastname" disabled="disabled" />
+<h2>Text input fields</h2>
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+
+  <h2>Radio Buttons</h2>
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form> 
+</form>
+<h2>Checkboxes</h2>
+<p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+<form action="/action_page.php">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<h2>The name Attribute</h2>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" value="ANH"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
 </body>
 </html>
