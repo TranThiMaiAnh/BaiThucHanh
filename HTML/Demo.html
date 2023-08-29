@@ -6,78 +6,67 @@
   <title>Mai Anh</title>
 </head>
 <body>
-  <h2>The input form attribute</h2>
+  <!-- <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+    Your browser does not support the HTML canvas tag.
+    </canvas> -->
 
-<p>The form attribute specifies the form an input element belongs to.</p>
+    <!-- <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.moveTo(0,0);
+      ctx.lineTo(200,100);
+      ctx.stroke();
+      </script> -->
 
-<form action="/action_page.php" id="form1">
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <input type="submit" value="Submit">
-</form>
-<p>The "Last name" field below is outside the form element, but still part of the form.</p>
-<label for="lname">Last name:</label>
-<input type="text" id="lname" name="lname" form="form1">
+      <!-- <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(200,100);
+        ctx.stroke();
+      </script> -->
 
-<h2>The input formaction attribute</h2>
-<p>The formaction attribute specifies the URL of a file that will process the input when the form is submitted.</p>
-<form action="/action_page.php">
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <input type="submit" value="Submit">
-  <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
-</form>
+      <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML canvas tag.</canvas>
+        
+        <script>
+        var c = document.getElementById("myCanvas");
+        //var ctx = c.getContext("2d");
+        //ctx.font = "30px Arial";
+        // ctx.fillText("Mai Anh",10,50);
+        //ctx.strokeText("Mai Anh", 10,50);
+        var ctx = c.getContext("2d");
+        // Create gradient
+        var grd = ctx.createLinearGradient(0,0,200,0);
+        //var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+        grd.addColorStop(0,"red");
+        grd.addColorStop(1,"white");
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(10,10,150,80);
+</script>
 
-<h2>The input formaction attribute</h2>
-<p>The formaction attribute specifies the URL of a file that will process the input when the form is submitted.</p>
-<form action="/action_page.php">
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <input type="submit" value="Submit">
-  <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
-</form>
+<p>Image to use:</p>
+<img id="scream" src="workplace.jpg" alt="The Scream" width="220" height="277">
 
-<h2>The input formmethod Attribute</h2>
-<p>The formmethod attribute defines the HTTP method for sending form-data to the action URL.</p>
-<form action="/action_page.php" method="get" target="_blank">
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <input type="submit" value="Submit using GET">
-  <input type="submit" formmethod="post" value="Submit using POST">
-</form>
+<p>Canvas to fill:</p>
+<canvas id="myCanvas" width="250" height="300"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
 
-<h2>The input formtarget attribute</h2>
-<p>The formtarget attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form.</p>
-<form action="/action_page.php">
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <input type="submit" value="Submit">
-  <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
-</form>
+<p><button onclick="myCanvas()">Try it</button></p>
+
+<script>
+function myCanvas() {
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("scream");
+  ctx.drawImage(img,10,10);
+}
+</script>
 
 
-<h2>The input formnovalidate attribute</h2>
-<form action="/action_page.php">
-  <label for="email">Enter your email:</label>
-  <input type="email" id="email" name="email" required><br><br>
-  <input type="submit" value="Submit">
-  <input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
-</form>
 
-<h2>The form novalidate attribute</h2>
-<form action="/action_page.php" novalidate>
-  <label for="email">Enter your email:</label>
-  <input type="email" id="email" name="email" required><br><br>
-  <input type="submit" value="Submit">
-</form>
 </body>
 </html>
 
