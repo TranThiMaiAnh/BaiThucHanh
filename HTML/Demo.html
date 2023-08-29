@@ -5,31 +5,83 @@
   <title>Title of document</title>
 </head>
 <body>
-  <h2>HTML Forms</h2>
-
-<!-- <form action="/action_page.php"> -->
-  <form action="/action_page.php" target="_blank">
-  <form action="/action_page.php" target="_blank" method="get">
-  <form action="/action_page.php" target="_blank" method="post">
+  
+<h2>thẻ input</h2>
+<form action="/action_page.php">
   <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="Mai"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Anh"><br><br>
-  <input type="submit" value="Submit">
-</form> 
-<form action="/action_page.php" autocomplete="on">
-  <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname"><br><br>
-  <label for="email">Email:</label>
-  <input type="text" id="email" name="email"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h2>The select Element</h2>
+
+<p>chọn loại ô tô</p>
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars" size="2" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="audi" selected>Audi</option>
+  </select>
+  <input type="submit">
+</form>
+<h2>Textarea</h2>
+<form action="/action_page.php">
+  <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+  <br><br>
   <input type="submit">
 </form>
 
-<form action="/action_page.php" novalidate>
-  <label for="email">Enter your email:</label>
-  <input type="email" id="email" name="email"><br><br>
+<h2>Styling Textarea</h2>
+<form action="/action_page.php">
+  <textarea name="message" style="width:200px; height:300px;">Tran thi mai anh -2021050093.</textarea>
+  <br>
   <input type="submit">
 </form>
+
+<h2>The button Element</h2>
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+<h2>Grouping Form Data with Fieldset</h2>
+
+
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="Mai"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Anh"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+<h2>The datalist Element</h2>
+<form action="/action_page.php">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+
+<h2>The output Element</h2>
+<form action="/action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
 
 
 </body>
