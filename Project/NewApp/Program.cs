@@ -3,17 +3,21 @@ public class Program
 {
     private static void Main(string[]args)
     {
-//khai báo kiểu hằng số
+// so sánh 2 số
+         int a,b;
+      System.Console.Write("a = ");
+      a = Convert.ToInt32(Console.ReadLine());
 
-      const int tuoi = 20;
+      System.Console.Write("b = ");
+      b = Convert.ToInt32(Console.ReadLine());
 
-      const string HoTen = "Tran Thi Mai ANh";
-      const float a = 0.5f;
-      const double b = 4.5;
-      const bool e = true;
-      const char KyTu = 'a';
-      Console.WriteLine("Nhanvien {0} + {1} tuoi la ",HoTen,tuoi);
+      if(a<b){
+        Console.WriteLine("{0} nho hon {1}",a,b);
+      } else{
+       Console.WriteLine("{0} lon hon {1}",a,b);
+      }
     }
 }
-      
+    
+  
 
