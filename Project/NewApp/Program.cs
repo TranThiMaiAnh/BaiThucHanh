@@ -3,24 +3,17 @@ public class Program
 {
     private static void Main(string[]args)
     {
-//khai báo kiểu biến số
-       //khai báo biến a kiểu số nguyên
-       int msv = 2021050093;
-        Console.WriteLine(msv);
-     //khai báo kiểu số thực
-        double b = 1.5;
-      Console.WriteLine(b);
-     //khai báo kiẻu chuỗi
-     string name ="Tran Thi Mai Anh";
-     Console.WriteLine(name);
-     //khai báo kiểu ký tự
-     char kytu ='a';
-     Console.WriteLine(kytu);
-     //khai báo kiểu bool
-      bool d = true;
-      bool e = false;
-       Console.WriteLine(d);
-      Console.WriteLine(e);  
+//khai báo kiểu hằng số
+
+      const int tuoi = 20;
+
+      const string HoTen = "Tran Thi Mai ANh";
+      const float a = 0.5f;
+      const double b = 4.5;
+      const bool e = true;
+      const char KyTu = 'a';
+      Console.WriteLine("Nhanvien {0} + {1} tuoi la ",HoTen,tuoi);
     }
 }
+      
 
