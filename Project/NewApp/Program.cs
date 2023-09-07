@@ -4,12 +4,14 @@ public class Program
     private static void Main(string[]args)
     {
 
-      //lặp for
-        for(int i = 1; i <=9; i ++)
-        {
-          System.Console.WriteLine("Number {0}" ,i);
-        }
-      }
+    //  lặp while
+   int a = 2;
+   while(a<6)
+  {
+    System.Console.WriteLine("Von lap thu {0}", a);
+    a++;
+    }
+      } 
     
    
 }
