@@ -4,19 +4,19 @@ public class Program
     private static void Main(string[]args)
     {
 
-       //câu lệnh switch...case
-       int day = 8;
-   switch(day){
-   case 1: System.Console.WriteLine("Sunday"); break;
-  case 2: System.Console.WriteLine("Monday"); break;
-  case 3: System.Console.WriteLine("Tuesday"); break;
-  case 5: System.Console.WriteLine("wednesday"); break;
-  case 6: System.Console.WriteLine("Friday"); break;
+int a,b;
+      System.Console.Write("a = ");
+       a = Convert.ToInt32(Console.ReadLine());
 
-  default:
-    System.Console.WriteLine("Không phai ngay trong tuan");
-    break;
+      System.Console.Write("b = ");
+       b = Convert.ToInt32(Console.ReadLine());
+       
+
+        System.Console.WriteLine("{0} - {1} = {2}",a,b,a-b);
+        System.Console.WriteLine("{0} * {1} = {2}",a,b,a*b);
+        System.Console.WriteLine("{0} / {1} = {2}",a,b,a/b);
+        System.Console.WriteLine("{0} % {1} = {2}",a,b,a%b);
    }
    
 }
-}
+
