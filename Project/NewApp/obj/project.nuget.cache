@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hTwnIh0GJB/0MGWykG+omE2MEPLhuHWZy/7hvMeRDsevzeeAWn9OSN5FOa9PI1FV+yNYTqxk9zPf9aQjtmTlnQ==",
+  "dgSpecHash": "G2YY8KQoADBacevoYmNzniW71eFaplHd5zfswKYBN1dBxj8NbWw9+gwH056/sVw1IvdwnANaLbPtLJ2jP5jzGA==",
   "success": true,
-  "projectFilePath": "c:\\ASP MVC\\Project\\NewApp\\NewApp.csproj",
+  "projectFilePath": "C:\\ASP MVC\\Project\\NewApp\\NewApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
