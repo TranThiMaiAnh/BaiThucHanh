@@ -4,17 +4,19 @@ public class Program
     private static void Main(string[]args)
     {
 
-       //câu lệnh IF-ELSE
-   int c = 10;
-   if(c<0)
-  {
-  System.Console.WriteLine("{0} là số nguyên âm", c);
-   }else{
-  if( c % 2 == 0) {
-   System.Console.WriteLine("{0} là số nguyên dương chẵn", c);
-   }else{
-   System.Console.WriteLine("{0} là số nguyên dưong lẻ", c);
-     }
+       //câu lệnh switch...case
+       int day = 8;
+   switch(day){
+   case 1: System.Console.WriteLine("Sunday"); break;
+  case 2: System.Console.WriteLine("Monday"); break;
+  case 3: System.Console.WriteLine("Tuesday"); break;
+  case 5: System.Console.WriteLine("wednesday"); break;
+  case 6: System.Console.WriteLine("Friday"); break;
+
+  default:
+    System.Console.WriteLine("Không phai ngay trong tuan");
+    break;
    }
+   
 }
 }
