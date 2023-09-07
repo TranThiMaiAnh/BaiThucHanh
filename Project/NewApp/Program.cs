@@ -4,17 +4,14 @@ public class Program
     private static void Main(string[]args)
     {
 
-    //  lặp do while
-    int a = 2;
- do
-    {
-      System.Console.WriteLine("Vòng lặp thứ {0}",a);
-      a++;
-      a++;// tăng a lên 1 đơn vị để đảm bảo có lúc a>= 10; a>=10 thì vòng lặp kết thúcthúc
-
-    }while(a <10);
+    //  break
+for(int i = 0; i < 10; i++)
+{
+  if(i == 3) break;
+  
+  System.Console.WriteLine("Vong lap thu {0}", i);
     
-   
-}
+    }
+  }
 }
 
