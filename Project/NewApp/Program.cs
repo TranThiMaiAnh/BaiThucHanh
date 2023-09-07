@@ -3,21 +3,18 @@ public class Program
 {
     private static void Main(string[]args)
     {
-// so sánh 2 số
-         int a,b;
-      System.Console.Write("a = ");
-      a = Convert.ToInt32(Console.ReadLine());
 
-      System.Console.Write("b = ");
-      b = Convert.ToInt32(Console.ReadLine());
-
-      if(a<b){
-        Console.WriteLine("{0} nho hon {1}",a,b);
-      } else{
-       Console.WriteLine("{0} lon hon {1}",a,b);
-      }
-    }
+       //câu lệnh IF-ELSE
+   int c = 10;
+   if(c<0)
+  {
+  System.Console.WriteLine("{0} là số nguyên âm", c);
+   }else{
+  if( c % 2 == 0) {
+   System.Console.WriteLine("{0} là số nguyên dương chẵn", c);
+   }else{
+   System.Console.WriteLine("{0} là số nguyên dưong lẻ", c);
+     }
+   }
 }
-    
-  
-
+}
