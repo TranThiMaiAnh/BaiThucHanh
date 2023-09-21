@@ -1,6 +1,4 @@
-﻿
-using NewApp.Models;
-
-Employee emp = new Employee();
-emp.EnterData();
-emp.Display();
+﻿using NewApp.Models;
+Students std = new Students();
+std.EnterData();
+std.Display();

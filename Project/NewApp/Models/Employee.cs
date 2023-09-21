@@ -1,5 +1,4 @@
 namespace NewApp.Models
-
 {
     public class Employee
     {
@@ -27,5 +26,5 @@ namespace NewApp.Models
         }
 
         }
-}
+} 
 
