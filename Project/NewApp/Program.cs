@@ -1,4 +1,4 @@
 ﻿using NewApp.Models;
-Students std = new Students();
-std.EnterData();
-std.Display();
+Fruit frt = new Fruit();
+frt.EnterData();
+frt.Display();
