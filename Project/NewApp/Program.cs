@@ -1,4 +1,8 @@
 ﻿using NewApp.Models;
-Person per = new Person();
-per.EnterData();
-per.Display();
+public class Program{   
+     private static void Main(String[] args){
+        Students std = new Students();
+        std.EnterData();
+        std.Display();
+    }
+}
