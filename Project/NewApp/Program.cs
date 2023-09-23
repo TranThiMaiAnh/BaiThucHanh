@@ -1,10 +1,10 @@
 ﻿using NewApp.Models;
 public class Program{   
      private static void Main(String[] args){
-        Employee emp    = new Employee();
-        emp.EnterData();
-        emp.Display();
+        FruitC frc = new FruitC();
+        frc.EnterData();
+        frc.Display();
     }
 }
 // tran thi mai anh -202105093
-// Employee ke thua person
+// FruitC ke thua fruit
