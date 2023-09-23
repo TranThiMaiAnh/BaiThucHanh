@@ -1,4 +1,4 @@
 ﻿using NewApp.Models;
-Fruit frt = new Fruit();
-frt.EnterData();
-frt.Display();
+Person per = new Person();
+per.EnterData();
+per.Display();

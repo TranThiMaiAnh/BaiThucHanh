@@ -11,7 +11,7 @@ namespace NewApp.Models
             NameFruit = Console.ReadLine();
             System.Console.Write("Weight = ");
            Weight = Convert.ToInt32(Console.ReadLine());
-            System.Console.Write("Cost = ");
+            System.Console.WriteLine("Cost = ");
             Cost = Convert.ToDouble(Console.ReadLine());
 
         }
