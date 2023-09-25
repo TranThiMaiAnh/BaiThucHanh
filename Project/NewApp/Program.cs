@@ -1,10 +1,10 @@
 ﻿using NewApp.Models;
 public class Program{   
      public static void Main(String[] args){
-       Employee emp1 = new Employee();
-       double luong = 2.6;
-       int tuoi = 20;
-       emp1.Display2(luong,tuoi);
+      Fruit frt1 = new Fruit();
+       int cost = 45000;
+       string color = " yellow";
+       frt1.Display2(cost,color);
     }
 }
 // tran thi mai anh -202105093

@@ -5,7 +5,7 @@ namespace NewApp.Models
         public string Information {get; set;}
        
 
-        // phuong thuc khoi tao-Fruit
+        // phuong thuc chua tham so-Fruit
         public Fruit()
         {
             FruitName = "ten  ";
@@ -16,6 +16,11 @@ namespace NewApp.Models
             {
                 
                 System.Console.WriteLine("{0}-{1} ",FruitName,Information);
+            }
+        public void Display2(int cost, string color)
+            {
+                
+                System.Console.WriteLine("{0}-{1} ",cost, color);
             }
  }
  } 
