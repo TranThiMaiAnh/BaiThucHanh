@@ -1,24 +1,20 @@
 namespace NewApp.Models
- {
- public class Person{
-        public string Name{get; set;}
-        public int Age{get; set;}
-        public string Address{get; set;}
+{
+    public class Person
+    {
+        public string FullName  {get; set;}
+        public string Address  {get; set;}
+        public int Age  {get; set;}
+    public Person()
+    {
+        FullName = "Ho ten mac dinh";
+        Address = "Dia chi mac dinh";
+        Age = 20;
+    }
 
-        public void EnterData()
-        {
-            System.Console.Write("Name = ");
-            Name = Console.ReadLine();
-            System.Console.Write("Age= ");
-            Age = Convert.ToInt32(Console.ReadLine());
-            System.Console.Write("Address = ");
-            Address= Console.ReadLine();
-
-        }
-
-        public void Display()
-        {
-            System.Console.WriteLine("{0} + {1} + {2}" , Name,Age, Address);
-        }
- }
- }
+    public void Display()
+    {
+        System.Console.WriteLine("{0} + {1} + {2}" , FullName, Address, Age);
+    }
+    }
+}
