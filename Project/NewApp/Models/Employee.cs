@@ -5,7 +5,7 @@ namespace NewApp.Models
         public string Address {get; set;}
         public string EmployeeID {get; set;}
 
-        // phuong thuc khoi tao-Employee
+        // phuong thuc chua tham so-Employee
         public Employee()
         {
             FullName = "ho ten ";
@@ -17,6 +17,12 @@ namespace NewApp.Models
                 
                 System.Console.WriteLine("{0}-{1}-{2} ",FullName, Address, EmployeeID);
             }
+         public void Display2(double luong, int tuoi)
+            {
+                
+                System.Console.WriteLine("{0}-{1} ",luong,tuoi);
+            }
+        
  }
  } 
         
