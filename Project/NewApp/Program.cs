@@ -1,14 +1,13 @@
 ﻿using NewApp.Models;
 public class Program{   
      public static void Main(String[] args){
-       Employee emp1= new Employee();
-       Employee emp2 = new Employee();
-         emp1.FullName= "Tran Thi Mai Anh";
-         emp1.Address="Ha noi";
-         emp1.EmployeeID="2021050000";
-        
-        emp1.Display();
-        emp2.Display();
+       Fruit frt1= new Fruit();
+       Fruit frt2 = new Fruit();
+         frt1.FruitName= "Lemon";
+         frt1.Information="hang vn xuat khau";
+    
+        frt1.Display();
+        frt2.Display();
     }
 }
 // tran thi mai anh -202105093
