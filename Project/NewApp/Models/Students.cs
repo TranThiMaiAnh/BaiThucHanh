@@ -7,7 +7,7 @@
         
         
     // tran thi mai anh -2021050093
-    // phuong thưc khởi tạo
+    // phuong thuc khoi tao-student
         public Students ()
         {
             Name = "ho ten mac dinh";
