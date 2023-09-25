@@ -1,13 +1,10 @@
 ﻿using NewApp.Models;
 public class Program{   
      public static void Main(String[] args){
-       Fruit frt1= new Fruit();
-       Fruit frt2 = new Fruit();
-         frt1.FruitName= "Lemon";
-         frt1.Information="hang vn xuat khau";
-    
-        frt1.Display();
-        frt2.Display();
+       Students std1 = new Students();
+       string str =" mai anh";
+       int a = 20;
+       std1.Display2(str,a);
     }
 }
 // tran thi mai anh -202105093

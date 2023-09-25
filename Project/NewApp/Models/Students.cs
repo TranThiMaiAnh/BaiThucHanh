@@ -7,7 +7,7 @@
         
         
     // tran thi mai anh -2021050093
-    // phuong thuc khoi tao-student
+    // phuong chua tham so-student
         public Students ()
         {
             Name = "ho ten mac dinh";
@@ -18,6 +18,11 @@
             {
                 
                 System.Console.WriteLine("{0}-{1}-{2} ",Name, Address, StudentID);
+            }
+         public void Display2(string ten, int tuoi)
+            {
+                
+                System.Console.WriteLine("{0}-{1} ",ten, tuoi);
             }
  }
  } 
