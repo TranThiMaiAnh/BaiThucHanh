@@ -14,15 +14,21 @@
             Address ="Ha noi";
             StudentID ="2021050093";
         }
-        public void Display()
-            {
+        public int GetYearOfBirth(int age)
+    {
+        int yearOfBirth = 2023-age;
+        return yearOfBirth;
+    }
+
+        // pulic void Display()
+        //     {
                 
-                System.Console.WriteLine("{0}-{1}-{2} ",Name, Address, StudentID);
-            }
-         public void Display2(string ten, int tuoi)
-            {
+        //         System.Console.WriteLine("{0}-{1}-{2} ",Name, Address, StudentID);
+        //     }
+        //  public void Display2(string ten, int tuoi)
+        //     {
                 
-                System.Console.WriteLine("{0}-{1} ",ten, tuoi);
-            }
+        //         System.Console.WriteLine("{0}-{1} ",ten, tuoi);
+        //     }
  }
  } 
