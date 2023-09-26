@@ -12,17 +12,13 @@ namespace NewApp.Models
             Address ="dia chi";
             EmployeeID ="ma nhan vien";
         }
-        public void Display()
+        public int TinhLuong(int LuongCB)
             {
                 
-                System.Console.WriteLine("{0}-{1}-{2} ",FullName, Address, EmployeeID);
+                int Luong = LuongCB + 120000;
+                return Luong;
             }
-         public void Display2(double luong, int tuoi)
-            {
-                
-                System.Console.WriteLine("{0}-{1} ",luong,tuoi);
-            }
-        
+         
  }
  } 
         

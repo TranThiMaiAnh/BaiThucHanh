@@ -1,10 +1,10 @@
 ﻿using NewApp.Models;
 public class Program{   
      public static void Main(String[] args){
-      Students std= new Students();
-       string str ="tran thi mai anh";
-       int a = 20;
-       Console.WriteLine("{0} nam sinh la: {1}", str, std.GetYearOfBirth(a));
+      Employee emp = new Employee();
+       string FullName ="tran thi mai anh";
+       int b = 2000000;
+       Console.WriteLine("{0} co luong la {1}", FullName, emp.TinhLuong(b));
     }
 }
 // tran thi mai anh -202105093
