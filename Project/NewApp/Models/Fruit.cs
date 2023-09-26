@@ -6,22 +6,11 @@ namespace NewApp.Models
        
 
         // phuong thuc chua tham so-Fruit
-        public Fruit()
+        public int ThanhTien ( int CanNang)
         {
-            FruitName = "ten  ";
-            Information ="thong tin";
-           
+            int TTien = CanNang *2;
+            return TTien;
         }
-        public void Display()
-            {
-                
-                System.Console.WriteLine("{0}-{1} ",FruitName,Information);
-            }
-        public void Display2(int cost, string color)
-            {
-                
-                System.Console.WriteLine("{0}-{1} ",cost, color);
-            }
  }
  } 
         

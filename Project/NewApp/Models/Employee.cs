@@ -5,7 +5,7 @@ namespace NewApp.Models
         public string Address {get; set;}
         public string EmployeeID {get; set;}
 
-        // phuong thuc chua tham so-Employee
+        // phuong thuc co gia tri tra ve-Employee
         public Employee()
         {
             FullName = "ho ten ";
