@@ -12,23 +12,22 @@
         {
             Name = "ho ten mac dinh";
             Address ="Ha noi";
-            StudentID ="2021050093";
+            
         }
-        public int GetYearOfBirth(int age)
-    {
-        int yearOfBirth = 2023-age;
-        return yearOfBirth;
-    }
+        
+        public void NhapThongTin()
+        {
+            System.Console.WriteLine("ho va ten");
+            Name = Console.ReadLine();
+            System.Console.WriteLine("dia chi");
+            Address = Console.ReadLine();
+            
+        }
 
-        // pulic void Display()
-        //     {
-                
-        //         System.Console.WriteLine("{0}-{1}-{2} ",Name, Address, StudentID);
-        //     }
-        //  public void Display2(string ten, int tuoi)
-        //     {
-                
-        //         System.Console.WriteLine("{0}-{1} ",ten, tuoi);
-        //     }
+        public void HienThi()
+         {
+             System.Console.WriteLine("{0}-{1}", Name, Address);
+         }
  }
- } 
+
+ }    
