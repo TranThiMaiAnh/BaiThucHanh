@@ -2,9 +2,9 @@
 public class Program{   
      public static void Main(String[] args){
       {
-        Employee emp = new Employee();
-        emp.EnterData();
-        emp.HienThi();
+        Fruit frt = new Fruit();
+        frt.EnterData();
+        frt.Display();
       }
 }
 }

@@ -2,15 +2,32 @@ namespace NewApp.Models
  {
  public class Fruit {
         public string FruitName {get;set;}
-        public string Information {get; set;}
+        public int weight {get; set;}
        
 
         // phuong thuc co gia tri tra ve-Fruit
-        public int ThanhTien ( int CanNang)
+       public void EnterData()
+       {
+        System.Console.Write("Fruit name = ");
+        FruitName = Console.ReadLine();
+        System.Console.Write("weight = ");
+       
+        // tran thi mai anh-2021050093
+        // try...catch -Fruit
+        try{
+            weight = Convert.ToInt16(Console.ReadLine());
+        } catch(Exception e)
         {
-            int TTien = CanNang *2;
-            return TTien;
+            weight = 0;
         }
+
+    }
+    public void Display()
+    {
+        System.Console.WriteLine("{0} + {1} " , FruitName, weight);
+    }
+}
  }
- } 
+
+    
         
