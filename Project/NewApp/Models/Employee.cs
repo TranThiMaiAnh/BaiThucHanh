@@ -3,22 +3,29 @@ namespace NewApp.Models
  public class Employee {
         public string FullName {get;set;}
         public string Address {get; set;}
-        public string EmployeeID {get; set;}
-
-        // phuong thuc co gia tri tra ve-Employee
-        public Employee()
-        {
-            FullName = "ho ten ";
-            Address ="dia chi";
-            EmployeeID ="ma nhan vien";
-        }
-        public int TinhLuong(int LuongCB)
-            {
+        public int EmployeeID {get; set;}
+        // tranthimaianh-2021050093
+        //try...catch-Emp
+        public void EnterData(){
+                System.Console.Write("Full name = ");
+                FullName = Console.ReadLine();
+                System.Console.Write("Address = ");
+                Address = Console.ReadLine();
                 
-                int Luong = LuongCB + 120000;
-                return Luong;
-            }
-         
+                System.Console.WriteLine("EmployeeID");
+                // tran thi mai anh-2021050093
+                // try...catch -Person
+                try{
+                    EmployeeID = Convert.ToInt16(Console.ReadLine());
+                } catch(Exception e)
+                {
+                    EmployeeID = 0;
+                }
+        }
+        public void HienThi()
+         {
+             System.Console.WriteLine("{0}-{1}-{2}", FullName, Address, EmployeeID);
+         }
  }
- } 
-        
+
+ }    
