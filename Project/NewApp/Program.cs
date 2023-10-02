@@ -2,9 +2,9 @@
 public class Program{   
      public static void Main(String[] args){
       {
-        Person ps = new Person();
-        ps.EnterData();
-        ps.Display();
+        Students std = new Students();
+        std.NhapThongTin();
+        std.HienThi();
       }
 }
 }
