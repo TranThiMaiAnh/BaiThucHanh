@@ -13,8 +13,7 @@ namespace NewApp.Models
                 Address = Console.ReadLine();
                 
                 System.Console.WriteLine("EmployeeID");
-                // tran thi mai anh-2021050093
-                // try...catch -Person
+                
                 try{
                     EmployeeID = Convert.ToInt16(Console.ReadLine());
                 } catch(Exception e)

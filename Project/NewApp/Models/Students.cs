@@ -14,7 +14,8 @@
         Address = Console.ReadLine();
         System.Console.Write("Age= ");
         // tran thi mai anh-2021050093
-        // try...catch -Person
+        //try .. catch-Students
+        
         try{
             Age = Convert.ToInt16(Console.ReadLine());
         } catch(Exception e)
