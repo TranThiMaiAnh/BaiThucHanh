@@ -7,7 +7,7 @@ namespace NewApp.Models
         public int Age  {get; set;}
     public void EnterData()
     {
-        System.Console.Write("Full name = ");
+        System.Console.Write("fullname = ");
         FullName = Console.ReadLine();
         System.Console.Write("Address = ");
         Address = Console.ReadLine();
