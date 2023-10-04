@@ -4,7 +4,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        ArrayList employeeList = new ArrayList();
+        ArrayList fruitList = new ArrayList();
         int n;
         do
         {
@@ -25,19 +25,19 @@ internal class Program
         for (int i = 0; i < n; i++)
         {
             System.Console.WriteLine($"[{i}]");
-            Employee emp = new Employee();
-            emp.EnterData();
-            employeeList.Add(emp);
+            Fruit frt = new Fruit();
+            frt.EnterData();
+            fruitList.Add(frt);
         }
 
         
 
         System.Console.WriteLine("----------------------------------");
         // Hien thi danh sach 
-        foreach(Employee emp in employeeList)
+        foreach(Fruit frt in fruitList)
         {
             // goi toi phuong thuc hien thi
-            emp.HienThi();
+            frt.DisplayData();
         }
 
 
@@ -45,17 +45,17 @@ internal class Program
 
         // Sua thong tin 
 
-        string fullname = null;
-        System.Console.WriteLine($"Nhap ten nhan vien can sua: {fullname}");
-        fullname = Console.ReadLine();
+        string Fruitname  = null;
+        System.Console.WriteLine($"Nhap ten Fruit can sua: {Fruitname}");
+        Fruitname = Console.ReadLine();
 
-        for(int i = 0; i < employeeList.Count; i++)
+        for(int i = 0; i < fruitList.Count; i++)
         {   
-            Employee emp = (Employee) employeeList[i];
+            Fruit frt = (Fruit) fruitList[i];
 
-            if ( emp.FullName == fullname){
+            if ( frt.FruitName == Fruitname){
 
-                emp.EnterData();
+                frt.EnterData();
                 break;
 
             }else
@@ -68,26 +68,26 @@ internal class Program
 
         System.Console.WriteLine("---------------------------");
 
-        foreach(Employee emp in employeeList)
+        foreach(Fruit frt in fruitList)
         {
             // goi toi phuong thuc hien thi
-            emp.HienThi();
+            frt.DisplayData();
         }
 
         System.Console.WriteLine("----------------------------");
 
         // Xoa 1 phan tu trong list
 
-        System.Console.WriteLine("Nhap ten nhan vien can xoa: ");
-        fullname = Console.ReadLine();
+        System.Console.WriteLine("Nhap ten Fruit can xoa: ");
+        Fruitname = Console.ReadLine();
         
-        for(int i=0; i < employeeList.Count; i++ )
+        for(int i=0; i < fruitList.Count; i++ )
         {
-            Employee emp = (Employee) employeeList[i];
-            if(emp.FullName == fullname)
+            Fruit frt = (Fruit) fruitList[i];
+            if(frt.FruitName == Fruitname)
             {
-                employeeList.RemoveAt(i);
-                System.Console.WriteLine($"da xoa nhan vien co ten la: {fullname}");
+                fruitList.RemoveAt(i);
+                System.Console.WriteLine($"da xoa Fruit co ten la: {Fruitname}");
                 break;
             }
         }
@@ -96,13 +96,13 @@ internal class Program
         System.Console.WriteLine("----------------------------");
 
 
-         foreach(Employee emp in employeeList)
+         foreach(Fruit frt in fruitList)
         {
             
-            emp.HienThi();
+            frt.DisplayData();
         }
 
     }
 }
 //tranthimaianh-2021050093
-//array-Employee
+//array-Fruit
