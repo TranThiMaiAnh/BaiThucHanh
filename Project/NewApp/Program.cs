@@ -4,7 +4,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        ArrayList personList = new ArrayList();
+        ArrayList studentList = new ArrayList();
         int n;
         do
         {
@@ -25,19 +25,19 @@ internal class Program
         for (int i = 0; i < n; i++)
         {
             System.Console.WriteLine($"[{i}]");
-            Person ps = new Person();
-            ps.EnterData();
-            personList.Add(ps);
+            Students std = new Students();
+            std.EnterData();
+            studentList.Add(std);
         }
 
         
 
         System.Console.WriteLine("----------------------------------");
         // Hien thi danh sach 
-        foreach(Person ps in personList)
+        foreach(Students std in studentList)
         {
             // goi toi phuong thuc hien thi
-            ps.Display();
+            std.Display();
         }
 
 
@@ -46,16 +46,16 @@ internal class Program
         // Sua thong tin 
 
         string fullname = null;
-        System.Console.WriteLine($"Nhap ten nguoi  can sua: {fullname}");
+        System.Console.WriteLine($"Nhap ten hoc sinh can sua: {fullname}");
         fullname = Console.ReadLine();
 
-        for(int i = 0; i < personList.Count; i++)
+        for(int i = 0; i < studentList.Count; i++)
         {   
-            Person ps = (Person) personList[i];
+            Students std = (Students) studentList[i];
 
-            if ( ps.FullName == fullname){
+            if ( std.FullName == fullname){
 
-                ps.EnterData();
+                std.EnterData();
                 break;
 
             }else
@@ -68,26 +68,26 @@ internal class Program
 
         System.Console.WriteLine("---------------------------");
 
-        foreach(Person ps in personList)
+        foreach(Students std in studentList)
         {
             // goi toi phuong thuc hien thi
-            ps.Display();
+            std.Display();
         }
 
         System.Console.WriteLine("----------------------------");
 
         // Xoa 1 phan tu trong list
 
-        System.Console.WriteLine("Nhap ten nguoi can xoa: ");
+        System.Console.WriteLine("Nhap ten hoc sinh can xoa: ");
         fullname = Console.ReadLine();
         
-        for(int i=0; i < personList.Count; i++ )
+        for(int i=0; i < studentList.Count; i++ )
         {
-            Person ps = (Person) personList[i];
-            if(ps.FullName == fullname)
+            Students std = (Students) studentList[i];
+            if(std.FullName == fullname)
             {
-                personList.RemoveAt(i);
-                System.Console.WriteLine($"da xoa nguoi co ten la: {fullname}");
+                studentList.RemoveAt(i);
+                System.Console.WriteLine($"da xoa hoc sinh co ten la: {fullname}");
                 break;
             }
         }
@@ -96,13 +96,13 @@ internal class Program
         System.Console.WriteLine("----------------------------");
 
 
-         foreach(Person ps in personList)
+         foreach(Students std in studentList)
         {
             
-            ps.Display();
+            std.Display();
         }
 
     }
 }
 //tranthimaianh-2021050093
-//array-person
+//array-Students
