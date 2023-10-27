@@ -2,17 +2,11 @@ using System.ComponentModel.DataAnnotations;
 namespace DemoMVC.Models
 // tran thi mai anh - 2021050093
 {
-    public class Employee
+    public class Employee:Person
     {
-        [Required]
-        public string FullName{ get; set; }
-        [Required]
-        public int LuongCB{ get; set; }
-
-        [Required]
-        public int HsLuong{ get; set; }
-        [Required]
-        public int PhuCap{ get; set; }
+        
+        public string EmployeeID{ get; set; }
+        public string Age{ get; set; }
 
     
     }
