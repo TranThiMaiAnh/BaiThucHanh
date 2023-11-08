@@ -1,26 +1,32 @@
-@model DemoMVC.Models.Person
-// trần thị mai anh - 2021050093
+@model DemoMVC.Models.Employee
+
 @{
     ViewData["Title"] = "Details";
 }
-<div class="w3-text-green">
+
 <h1>Details</h1>
-</div>
+
 <div>
-    <h4>Person</h4>
+    <h4>Employee</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FullName)
+            @Html.DisplayNameFor(model => model.EmployeeID)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FullName)
+            @Html.DisplayFor(model => model.EmployeeID)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Age)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Age)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FullName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FullName)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Address)

@@ -28,6 +28,10 @@ namespace DemoMVC.Migrations
                     b.Property<int>("Age")
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("FullName")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -35,20 +39,23 @@ namespace DemoMVC.Migrations
                     b.HasKey("PersonID");
 
                     b.ToTable("Persons");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("Person");
+
+                    b.UseTphMappingStrategy();
                 });
 
-            modelBuilder.Entity("DemoMVC.Models.Student", b =>
+            modelBuilder.Entity("DemoMVC.Models.Employee", b =>
                 {
-                    b.Property<string>("StudentID")
-                        .HasColumnType("TEXT");
+                    b.HasBaseType("DemoMVC.Models.Person");
 
-                    b.Property<string>("FullName")
+                    b.Property<string>("EmployeeID")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.HasKey("StudentID");
+                    b.ToTable("Persons");
 
-                    b.ToTable("Students");
+                    b.HasDiscriminator().HasValue("Employee");
                 });
 #pragma warning restore 612, 618
         }

@@ -7,7 +7,9 @@ namespace DemoMVC.Data
         public ApplicationDbContext (DbContextOptions<ApplicationDbContext > options) : base(options)
         {}
         public DbSet<Person> Person {get; set;}
-        //public DbSet<Student> Student {get; set;}
-    }
+        public DbSet<DemoMVC.Models.Employee> Employee { get; set; } = default!;
+        
+        }
 }
-// trần thị mai anh 2021050093
+
+// trần thị mai anh 202105009

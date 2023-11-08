@@ -1,22 +1,53 @@
-<div class="w3-container w3-blue">
-  <h2>Input Employee</h2>
-</div>
-// tran thi mai anh -2021050093
-<form class="w3-container" asp-action="Index">
-  <p>
-  <label>FullName:</label>
-  <input name="FullName" class="w3-round-large w3-input w3-border w3-border-blue" type="text"></p>
-  <p>
-  <label>LuongCB:</label>
-  <input name="LuongCB" class="w3-round-large w3-input w3-border w3-border-blue" type="text"></p>
-  <p>
-  <label>HsLuong:</label>
-  <input name="HsLuong" class="w3-round-large w3-input w3-border w3-border-blue" type="text"></p>
-  <label>PhuCap:</label>
-  <input name="PhuCap" class="w3-round-large w3-input w3-border w3-border-blue" type="text"></p>
+@model IEnumerable<DemoMVC.Models.Employee>
 
+@{
+    ViewData["Title"] = "Index";
+}
 
+<h1>Index</h1>
 
-   <input type="submit" value="Send Data"> 
-</form>
-<p>@ViewBag.TinhLuong</p>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployeeID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployeeID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PersonID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PersonID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PersonID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
