@@ -2,6 +2,7 @@
 using DemoMVC.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,26 +10,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DemoMVC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231123022124_Create_table_DaiLy")]
+    partial class Create_table_DaiLy
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.13");
-
-            modelBuilder.Entity("DemoMVC.Models.Faculty", b =>
-                {
-                    b.Property<string>("FacultyID")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("FacultyName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("FacultyID");
-
-                    b.ToTable("Faculty");
-                });
 
             modelBuilder.Entity("DemoMVC.Models.HeThongPhanPhoi", b =>
                 {
@@ -127,25 +116,6 @@ namespace DemoMVC.Migrations
                     b.HasDiscriminator().HasValue("Employee");
                 });
 
-            modelBuilder.Entity("DemoMVC.Models.Student", b =>
-                {
-                    b.HasBaseType("DemoMVC.Models.Person");
-
-                    b.Property<string>("FacultyID")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("StudentID")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasIndex("FacultyID");
-
-                    b.ToTable("Person");
-
-                    b.HasDiscriminator().HasValue("Student");
-                });
-
             modelBuilder.Entity("DemoMVC.Models.DaiLy", b =>
                 {
                     b.HasOne("DemoMVC.Models.HeThongPhanPhoi", "HeThongPhanPhoi")
@@ -155,17 +125,6 @@ namespace DemoMVC.Migrations
                         .IsRequired();
 
                     b.Navigation("HeThongPhanPhoi");
-                });
-
-            modelBuilder.Entity("DemoMVC.Models.Student", b =>
-                {
-                    b.HasOne("DemoMVC.Models.Faculty", "Faculty")
-                        .WithMany()
-                        .HasForeignKey("FacultyID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Faculty");
                 });
 #pragma warning restore 612, 618
         }

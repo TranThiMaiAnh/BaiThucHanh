@@ -3,24 +3,23 @@
 #nullable disable
 
 namespace DemoMVC.Migrations
-{//trần thị mai anh 2021050093
+{
     /// <inheritdoc />
-    public partial class Create_table_Person : Migration
+    public partial class Create_table_HeThongPhanPhoi : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Persons",
+                name: "HeThongPhanPhoi",
                 columns: table => new
                 {
-                    PersonID = table.Column<string>(type: "TEXT", nullable: false),
-                    FullName = table.Column<string>(type: "TEXT", nullable: false),
-                    Address = table.Column<string>(type: "TEXT", nullable: false)
+                    MaHTPP = table.Column<string>(type: "TEXT", nullable: false),
+                    TenHTPP = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Persons", x => x.PersonID);
+                    table.PrimaryKey("PK_HeThongPhanPhoi", x => x.MaHTPP);
                 });
         }
 
@@ -28,7 +27,7 @@ namespace DemoMVC.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Persons");
+                name: "HeThongPhanPhoi");
         }
     }
 }

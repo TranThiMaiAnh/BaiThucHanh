@@ -4,14 +4,14 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-// mai anh - 2021050093
+
 #nullable disable
 
 namespace DemoMVC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231104134254_Create_colums_Age")]
-    partial class Create_colums_Age
+    [Migration("20231123014107_Create_table_Person")]
+    partial class Create_table_Person
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -37,21 +37,7 @@ namespace DemoMVC.Migrations
 
                     b.HasKey("PersonID");
 
-                    b.ToTable("Persons");
-                });
-
-            modelBuilder.Entity("DemoMVC.Models.Student", b =>
-                {
-                    b.Property<string>("StudentID")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("FullName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("StudentID");
-
-                    b.ToTable("Students");
+                    b.ToTable("Person");
                 });
 #pragma warning restore 612, 618
         }

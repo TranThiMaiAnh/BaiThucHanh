@@ -1,11 +1,11 @@
 @model DemoMVC.Models.Person
-// trần thị mai anh - 2021050093
+
 @{
     ViewData["Title"] = "Details";
 }
-<div class="w3-text-green">
+
 <h1>Details</h1>
-</div>
+
 <div>
     <h4>Person</h4>
     <hr />
@@ -17,16 +17,16 @@
             @Html.DisplayFor(model => model.FullName)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Age)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Age)
-        </dd>
-        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Address)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Address)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Age)
         </dd>
     </dl>
 </div>

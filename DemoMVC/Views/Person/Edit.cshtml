@@ -1,11 +1,10 @@
 @model DemoMVC.Models.Person
-//trần thị mai anh - 2021050093
+
 @{
     ViewData["Title"] = "Edit";
 }
-<div class="w3-text-orange">
+
 <h1>Edit</h1>
-</div>
 
 <h4>Person</h4>
 <hr />
@@ -20,17 +19,17 @@
                 <span asp-validation-for="FullName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Age" class="control-label"></label>
-                <input asp-for="Age" class="form-control" />
-                <span asp-validation-for="Age" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="Address" class="control-label"></label>
                 <input asp-for="Address" class="form-control" />
                 <span asp-validation-for="Address" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="w3-margin-top btn btn-primary" />
+                <label asp-for="Age" class="control-label"></label>
+                <input asp-for="Age" class="form-control" />
+                <span asp-validation-for="Age" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>
