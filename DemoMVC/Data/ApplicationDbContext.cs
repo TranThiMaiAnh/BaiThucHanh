@@ -7,7 +7,13 @@
         public ApplicationDbContext (DbContextOptions<ApplicationDbContext > options) : base(options)
         {}
         
+        public DbSet<Person> Person {get; set;}
+        public DbSet<DemoMVC.Models.Faculty> Faculty { get; set; } = default!;
+
         public DbSet<Student> Student {get; set;}
+       
+        
+        
        
         
 

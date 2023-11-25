@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "m+VnU0CLsNj1MjoeI5YjfGms5S7MefaG6dmwxFwVPg5gurTFtHtJJD5Y03cAy2BuW+lhyIf9dJ0fn84CHZKWzA==",
+  "dgSpecHash": "gUm3tor9DqXf+zYm9e9DlVZ95avaSxJPr9VVuQnKI96hNyamM3eeBbkf4/e54pj/6EoEP7BQOtfJ2BBfzqnOXw==",
   "success": true,
   "projectFilePath": "C:\\ASP MVC\\DemoMVC\\DemoMVC.csproj",
   "expectedPackageFiles": [
@@ -118,6 +118,8 @@
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\mono.texttemplating\\2.3.1\\mono.texttemplating.2.3.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\npgsql\\8.0.0\\npgsql.8.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.0\\npgsql.entityframeworkcore.postgresql.8.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\nuget.common\\6.3.1\\nuget.common.6.3.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\nuget.configuration\\6.3.1\\nuget.configuration.6.3.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\nuget.dependencyresolver.core\\6.3.1\\nuget.dependencyresolver.core.6.3.1.nupkg.sha512",

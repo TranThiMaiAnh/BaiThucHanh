@@ -4,15 +4,19 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace DemoMVC.Models
 // tran thi mai anh - 2021050093
 {
-    [Table("Student")]
-    public class Student
+    
+    public class Student 
     {
-        [Key]
-       
-        public string StudentID { get; set;}
-        public  string FullName { get; set;}
-        public  string Address { get; set;}
-        
+    [Key]
+    [Required(ErrorMessage = "Mã Sinh Viên không được để trống")]
+    public string? StudentID {get;set;}
+    
+    public string? FullName { get; set; }
+    public string? Address { get; set; }
+   
+     public string? FacultyID { get; set; }
+    [ForeignKey("FacultyID")]
+    public Faculty? Faculty { get; set; }   
     
     }
 }
