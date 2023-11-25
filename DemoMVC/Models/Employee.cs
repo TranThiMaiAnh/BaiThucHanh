@@ -1,11 +1,18 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace DemoMVC.Models
 // tran thi mai anh - 2021050093
 {
-
-    public class Employee : Person
+    [Table("Person")]
+    public class Employee
     {
-       public string EmployeeID { get; set;}
-        public int Age { get; set;}
+        [Key]
+       
+        public string EmpID { get; set;}
+        public  string FullName { get; set;}
+        public  string Address { get; set;}
+        
     
     }
 }

@@ -279,3 +279,4 @@ C:\ASP MVC\DemoMVC\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Cachi
 C:\ASP MVC\DemoMVC\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\ASP MVC\DemoMVC\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\ASP MVC\DemoMVC\obj\Debug\net7.0\DemoMVC.csproj.CopyComplete
+C:\ASP MVC\DemoMVC\obj\Debug\net7.0\DemoMVC.sourcelink.json

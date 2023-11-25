@@ -14,158 +14,45 @@ namespace DemoMVC.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "7.0.13");
+            modelBuilder.HasAnnotation("ProductVersion", "8.0.0");
 
-            modelBuilder.Entity("DemoMVC.Models.Faculty", b =>
+            modelBuilder.Entity("DemoMVC.Models.Student", b =>
                 {
-                    b.Property<string>("FacultyID")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("FacultyName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("FacultyID");
-
-                    b.ToTable("Faculty");
-                });
-
-            modelBuilder.Entity("DemoMVC.Models.HeThongPhanPhoi", b =>
-                {
-                    b.Property<string>("MaHTPP")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("TenHTPP")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("MaHTPP");
-
-                    b.ToTable("HeThongPhanPhoi");
-
-                    b.HasDiscriminator<string>("Discriminator").HasValue("HeThongPhanPhoi");
-
-                    b.UseTphMappingStrategy();
-                });
-
-            modelBuilder.Entity("DemoMVC.Models.Person", b =>
-                {
-                    b.Property<string>("PersonID")
+                    b.Property<string>("StudentID")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Address")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Age")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("Discriminator")
                         .IsRequired()
+                        .HasMaxLength(8)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("FullName")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.HasKey("PersonID");
+                    b.HasKey("StudentID");
 
-                    b.ToTable("Person");
+                    b.ToTable("Student");
 
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Person");
+                    b.HasDiscriminator<string>("Discriminator").HasValue("Student");
 
                     b.UseTphMappingStrategy();
                 });
 
-            modelBuilder.Entity("DemoMVC.Models.DaiLy", b =>
+            modelBuilder.Entity("DemoMVC.Models.Score", b =>
                 {
-                    b.HasBaseType("DemoMVC.Models.HeThongPhanPhoi");
+                    b.HasBaseType("DemoMVC.Models.Student");
 
-                    b.Property<string>("DiaChi")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Scored")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("DienThoai")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.ToTable("Student");
 
-                    b.Property<string>("MaDaiLy")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("MaHTPPID")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("NguoiDaiDien")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("TenDaiLy")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasIndex("MaHTPPID");
-
-                    b.HasDiscriminator().HasValue("DaiLy");
-                });
-
-            modelBuilder.Entity("DemoMVC.Models.Employee", b =>
-                {
-                    b.HasBaseType("DemoMVC.Models.Person");
-
-                    b.Property<string>("EmployeeID")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.ToTable("Person");
-
-                    b.HasDiscriminator().HasValue("Employee");
-                });
-
-            modelBuilder.Entity("DemoMVC.Models.Student", b =>
-                {
-                    b.HasBaseType("DemoMVC.Models.Person");
-
-                    b.Property<string>("FacultyID")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("StudentID")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasIndex("FacultyID");
-
-                    b.ToTable("Person");
-
-                    b.HasDiscriminator().HasValue("Student");
-                });
-
-            modelBuilder.Entity("DemoMVC.Models.DaiLy", b =>
-                {
-                    b.HasOne("DemoMVC.Models.HeThongPhanPhoi", "HeThongPhanPhoi")
-                        .WithMany()
-                        .HasForeignKey("MaHTPPID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("HeThongPhanPhoi");
-                });
-
-            modelBuilder.Entity("DemoMVC.Models.Student", b =>
-                {
-                    b.HasOne("DemoMVC.Models.Faculty", "Faculty")
-                        .WithMany()
-                        .HasForeignKey("FacultyID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Faculty");
+                    b.HasDiscriminator().HasValue("Score");
                 });
 #pragma warning restore 612, 618
         }
