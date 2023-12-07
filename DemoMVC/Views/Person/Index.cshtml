@@ -8,10 +8,14 @@
 
 <p>
     <a asp-action="Create">Create New</a>
+     <a class="btn btn-primary" asp-action="Download">Download file</a>
 </p>
 <table class="table">
     <thead>
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PersonID)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.FullName)
             </th>
@@ -24,6 +28,10 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.PersonID)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.FullName)
             </td>
