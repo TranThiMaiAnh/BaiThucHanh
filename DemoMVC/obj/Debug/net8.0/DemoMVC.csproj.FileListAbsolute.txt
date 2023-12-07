@@ -278,3 +278,7 @@ C:\ASP MVC\DemoMVC\obj\Debug\net8.0\DemoMVC.genruntimeconfig.cache
 C:\ASP MVC\DemoMVC\obj\Debug\net8.0\ref\DemoMVC.dll
 C:\ASP MVC\DemoMVC\bin\Debug\net8.0\Npgsql.dll
 C:\ASP MVC\DemoMVC\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\ASP MVC\DemoMVC\bin\Debug\net8.0\EPPlus.dll
+C:\ASP MVC\DemoMVC\bin\Debug\net8.0\EPPlus.Interfaces.dll
+C:\ASP MVC\DemoMVC\bin\Debug\net8.0\EPPlus.System.Drawing.dll
+C:\ASP MVC\DemoMVC\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
